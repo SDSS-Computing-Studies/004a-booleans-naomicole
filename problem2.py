@@ -10,3 +10,6 @@
 # Outputs:
 # "the number is an integer"
 # "the number is not an integer"
+
+a=input("Enter a number: ")
+a=float(a)
