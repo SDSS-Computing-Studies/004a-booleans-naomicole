@@ -8,6 +8,7 @@
 # 1 marks
 
 a=input("Username: ")
+#str is not needed
 a=str(a)
 if "admin" not in a:
     print("invalid user")
