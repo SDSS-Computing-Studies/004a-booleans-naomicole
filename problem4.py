@@ -12,3 +12,15 @@
 # - "that is a right triangle"
 # - "that is an acute triangle"
 # - "that is an obtuse triangle"
+
+import math 
+a=input("Enter value for a: ")
+a=float(a)
+
+b=input("Enter value for b: ")
+b=float(b)
+
+c=input("Enter value for c: ")
+c=float(c)
+
+x=math.pow(b,2)-4*a*c
