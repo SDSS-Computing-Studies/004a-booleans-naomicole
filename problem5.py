@@ -17,6 +17,7 @@
 # - "the equation can not be factored"
 
 import math 
+
 a=input("Enter value for a: ")
 a=float(a)
 
