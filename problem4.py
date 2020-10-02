@@ -13,14 +13,34 @@
 # - "that is an acute triangle"
 # - "that is an obtuse triangle"
 
-import math 
-a=input("Enter value for a: ")
+import math
+
+a=input("A value for a: ")
 a=float(a)
 
-b=input("Enter value for b: ")
+b=input("A value for b: ")
 b=float(b)
 
-c=input("Enter value for c: ")
+c=input("A value for c: ")
 c=float(c)
 
-x=math.pow(b,2)-4*a*c
+a1=a**2
+b1=b**2
+c1=c**2
+
+d=a1+b1
+
+x=math.sqrt(a1+b1)
+tolerance=x**0.02
+z=x
+x2=x+tolerance
+x1=x-tolerance
+
+if x1 <= x and x <= x2:
+    print("that is a right triangle")
+
+elif d<c1:
+    print("that is an acute triangle")
+
+elif d>c1:
+    print("that is an obtuse triangle")
